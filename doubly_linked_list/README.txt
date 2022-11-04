@@ -1,0 +1,1 @@
+This program implements a doubly linked list. The Main.c file contains multiple unit tests that verify the functionality of the doubly linked list. The list is set to accept ints as data values, but this could be altered to take a void* type to make the list more universally usable.
