@@ -7,6 +7,7 @@ Dr. G
 Project #8: Yearly Precipitation in Portland with Exception Handling
 '''
 import folium
+import sys
 
 POSSIBLE_CITIES_DICT = {"BIDDEFORD":[43.4926, 70.4534],'BUXTON':[43.6379, 70.5189],'CAPE ELIZABETH':[43.5637, 70.2000],'CHEBEAGUE ISLAND':[43.7417, 70.1075],'CLIFF ISLAND':[43.7041, 70.0997],
                 'CUMBERLAND':[43.7966, 70.2585],'FREEPORT':[43.8570, 70.1031],'GORHAM':[43.6795, 70.4442],'GRAY':[43.8856, 70.3317],'LONG ISLAND':[43.6842, 70.1712],'NORTH WINDHAM':[43.8342, 70.4384],
@@ -84,8 +85,12 @@ def create_map(city_list:list,precip_data:list,beg_year:int,end_year:int):
     save_file = input("\nWhat would you like to name your .html map file? (make sure it ends in '.html')\n\t> ")
     maine_map.save(save_file)
 
-def main():
-    file = input("\nInput the average precipitation .txt file you'd like to create a map for\n\t> ")
+def main(file = sys.argv):
+    if len(file) <2:
+        file = input("\nInput the average precipitation .txt file you'd like to create a map for\n\t> ")
+    else:
+        file = file[1]
+
     city_data = extract_format(file)
     create_map(city_data[0],city_data[1],city_data[2],city_data[3])
 

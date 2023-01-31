@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f711baec2b1a6241a8c2ddc94a296314 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f711baec2b1a6241a8c2ddc94a296314" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f711baec2b1a6241a8c2ddc94a296314 = L.map(
+                "map_f711baec2b1a6241a8c2ddc94a296314",
+                {
+                    center: [43.4926, -70.4534],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24ebd879c4b2099ccc043fbf18ccf01f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var marker_6a2e8e36562ca96add381bb9d9110f34 = L.marker(
+                [43.4926, -70.4534],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_dae3c77cdd31fe35dcf225ac5d0007ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a2e8e36562ca96add381bb9d9110f34.setIcon(icon_dae3c77cdd31fe35dcf225ac5d0007ba);
+        
+    
+        var popup_0c7b2b2acc47d866b7eeff37169a7731 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1ea3d9405b6cf63dd1264a8666e94cf = $(`<div id="html_f1ea3d9405b6cf63dd1264a8666e94cf" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2010:&nbsp0.116 in.<br>2011:&nbsp0.134 in.<br>2012:&nbsp0.122 in.<br>2013:&nbsp0.126 in.<br>2014:&nbsp0.148 in.<br>2015:&nbsp0.115 in.<br>2016:&nbsp0.123 in.<br>2017:&nbsp0.139 in.<br>2018:&nbsp0.153 in.<br>2019:&nbsp0.144 in.<br></strong></div>`)[0];
+                popup_0c7b2b2acc47d866b7eeff37169a7731.setContent(html_f1ea3d9405b6cf63dd1264a8666e94cf);
+            
+        
+
+        marker_6a2e8e36562ca96add381bb9d9110f34.bindPopup(popup_0c7b2b2acc47d866b7eeff37169a7731)
+        ;
+
+        
+    
+    
+            marker_6a2e8e36562ca96add381bb9d9110f34.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e07fb41f4a2002396ebc6c8279d06c99 = L.marker(
+                [43.6591, -70.2568],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_45af758edbca7821138f6f96e1e08c2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e07fb41f4a2002396ebc6c8279d06c99.setIcon(icon_45af758edbca7821138f6f96e1e08c2f);
+        
+    
+        var popup_2a715c3a14a352256d241fb27108708d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c35263c82cfecda8748f4d6b8bc212c3 = $(`<div id="html_c35263c82cfecda8748f4d6b8bc212c3" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2020:&nbsp0.124 in.<br>2021:&nbsp0.166 in.<br>2010:&nbsp0.16 in.<br>2011:&nbsp0.152 in.<br>2012:&nbsp0.158 in.<br>2013:&nbsp0.128 in.<br>2014:&nbsp0.154 in.<br>2015:&nbsp0.133 in.<br>2016:&nbsp0.121 in.<br>2017:&nbsp0.121 in.<br></strong></div>`)[0];
+                popup_2a715c3a14a352256d241fb27108708d.setContent(html_c35263c82cfecda8748f4d6b8bc212c3);
+            
+        
+
+        marker_e07fb41f4a2002396ebc6c8279d06c99.bindPopup(popup_2a715c3a14a352256d241fb27108708d)
+        ;
+
+        
+    
+    
+            marker_e07fb41f4a2002396ebc6c8279d06c99.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d2906a616eb2d5a1b466a23c09cbc0e = L.marker(
+                [43.6591, -70.2568],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_7614b2e978edc5c1d5cb4c3a1bede2fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d2906a616eb2d5a1b466a23c09cbc0e.setIcon(icon_7614b2e978edc5c1d5cb4c3a1bede2fc);
+        
+    
+        var popup_2085d52503c27e9dbdfc47b991aeb83b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52999399e6318d4291ee92b66bc9e543 = $(`<div id="html_52999399e6318d4291ee92b66bc9e543" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2018:&nbsp0.15 in.<br>2019:&nbsp0.151 in.<br>2020:&nbsp0.127 in.<br>2021:&nbsp0.123 in.<br>2010:&nbsp0 in.<br>2011:&nbsp0 in.<br>2012:&nbsp0 in.<br>2013:&nbsp0 in.<br>2014:&nbsp0.164 in.<br>2015:&nbsp0.127 in.<br></strong></div>`)[0];
+                popup_2085d52503c27e9dbdfc47b991aeb83b.setContent(html_52999399e6318d4291ee92b66bc9e543);
+            
+        
+
+        marker_7d2906a616eb2d5a1b466a23c09cbc0e.bindPopup(popup_2085d52503c27e9dbdfc47b991aeb83b)
+        ;
+
+        
+    
+    
+            marker_7d2906a616eb2d5a1b466a23c09cbc0e.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ced2c37f1a90d505366f29cc66a62ca = L.marker(
+                [43.6415, -70.2409],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_37afbbecc1510fea106c7198805354ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ced2c37f1a90d505366f29cc66a62ca.setIcon(icon_37afbbecc1510fea106c7198805354ea);
+        
+    
+        var popup_10b053c471e5464077e4fad9a1bb8c49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38c831d4427e6a792c7cb63a70950a50 = $(`<div id="html_38c831d4427e6a792c7cb63a70950a50" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2016:&nbsp0.128 in.<br>2017:&nbsp0 in.<br>2018:&nbsp0.193 in.<br>2019:&nbsp0.138 in.<br>2020:&nbsp0.111 in.<br>2021:&nbsp0.136 in.<br>2010:&nbsp0.169 in.<br>2011:&nbsp0.152 in.<br>2012:&nbsp0.161 in.<br>2013:&nbsp0.124 in.<br></strong></div>`)[0];
+                popup_10b053c471e5464077e4fad9a1bb8c49.setContent(html_38c831d4427e6a792c7cb63a70950a50);
+            
+        
+
+        marker_5ced2c37f1a90d505366f29cc66a62ca.bindPopup(popup_10b053c471e5464077e4fad9a1bb8c49)
+        ;
+
+        
+    
+    
+            marker_5ced2c37f1a90d505366f29cc66a62ca.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4beb8daf75f905c2abf0107b56d913ff = L.marker(
+                [43.6795, -70.4442],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_fabf2c9f9d769e4d22dcc2c80329c44b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4beb8daf75f905c2abf0107b56d913ff.setIcon(icon_fabf2c9f9d769e4d22dcc2c80329c44b);
+        
+    
+        var popup_3f91b52171488184361670fc28fe909c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee597a8e7ac32e33e9afa19472e2e845 = $(`<div id="html_ee597a8e7ac32e33e9afa19472e2e845" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2014:&nbsp0.146 in.<br>2015:&nbsp0.125 in.<br>2016:&nbsp0.125 in.<br>2017:&nbsp0.128 in.<br>2018:&nbsp0 in.<br>2019:&nbsp0 in.<br>2020:&nbsp0 in.<br>2021:&nbsp0 in.<br>2010:&nbsp0.163 in.<br>2011:&nbsp0.142 in.<br></strong></div>`)[0];
+                popup_3f91b52171488184361670fc28fe909c.setContent(html_ee597a8e7ac32e33e9afa19472e2e845);
+            
+        
+
+        marker_4beb8daf75f905c2abf0107b56d913ff.bindPopup(popup_3f91b52171488184361670fc28fe909c)
+        ;
+
+        
+    
+    
+            marker_4beb8daf75f905c2abf0107b56d913ff.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57f79973cef869fa03af30cf9cbd9b36 = L.marker(
+                [43.8856, -70.3317],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_0be414e115eab5c7441941eafa9acb32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57f79973cef869fa03af30cf9cbd9b36.setIcon(icon_0be414e115eab5c7441941eafa9acb32);
+        
+    
+        var popup_eee7a8c24c6b0b8958523542d3a5f918 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e399b88fba10d62115b5c96e5cbebda = $(`<div id="html_8e399b88fba10d62115b5c96e5cbebda" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2012:&nbsp0.153 in.<br>2013:&nbsp0.128 in.<br>2014:&nbsp0.141 in.<br>2015:&nbsp0.112 in.<br>2016:&nbsp0.112 in.<br>2017:&nbsp0 in.<br>2018:&nbsp0.154 in.<br>2019:&nbsp0.157 in.<br>2020:&nbsp0.13 in.<br>2021:&nbsp0.134 in.<br></strong></div>`)[0];
+                popup_eee7a8c24c6b0b8958523542d3a5f918.setContent(html_8e399b88fba10d62115b5c96e5cbebda);
+            
+        
+
+        marker_57f79973cef869fa03af30cf9cbd9b36.bindPopup(popup_eee7a8c24c6b0b8958523542d3a5f918)
+        ;
+
+        
+    
+    
+            marker_57f79973cef869fa03af30cf9cbd9b36.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6639eebeb1d298f7727fdcc2ed6068ba = L.marker(
+                [43.677, -70.3712],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_a5f28511ade5c17ef2ba88509da040f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6639eebeb1d298f7727fdcc2ed6068ba.setIcon(icon_a5f28511ade5c17ef2ba88509da040f2);
+        
+    
+        var popup_33aa05b45108b908bd46f93e2fa14574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8279994a517c98a24a26aa4895bde750 = $(`<div id="html_8279994a517c98a24a26aa4895bde750" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2010:&nbsp0.162 in.<br>2011:&nbsp0.167 in.<br>2012:&nbsp0.174 in.<br>2013:&nbsp0.193 in.<br>2014:&nbsp0.83 in.<br>2015:&nbsp1.317 in.<br>2016:&nbsp0.799 in.<br>2017:&nbsp0.196 in.<br>2018:&nbsp0.198 in.<br>2019:&nbsp0 in.<br></strong></div>`)[0];
+                popup_33aa05b45108b908bd46f93e2fa14574.setContent(html_8279994a517c98a24a26aa4895bde750);
+            
+        
+
+        marker_6639eebeb1d298f7727fdcc2ed6068ba.bindPopup(popup_33aa05b45108b908bd46f93e2fa14574)
+        ;
+
+        
+    
+    
+            marker_6639eebeb1d298f7727fdcc2ed6068ba.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f4373f9ed9812009c79090379b28878 = L.marker(
+                [43.857, -70.1031],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_276a3c1d53f30b6b0d2ed12a3e5e1ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f4373f9ed9812009c79090379b28878.setIcon(icon_276a3c1d53f30b6b0d2ed12a3e5e1ee9);
+        
+    
+        var popup_38a3bf49d79b1f89de105ebbd729ba6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51060cb130a781be95db5a44b632dd58 = $(`<div id="html_51060cb130a781be95db5a44b632dd58" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2020:&nbsp1.03 in.<br>2021:&nbsp0.244 in.<br>2010:&nbsp0.161 in.<br>2011:&nbsp0.17 in.<br>2012:&nbsp0.17 in.<br>2013:&nbsp0.15 in.<br>2014:&nbsp0.178 in.<br>2015:&nbsp0.157 in.<br>2016:&nbsp0.139 in.<br>2017:&nbsp0.129 in.<br></strong></div>`)[0];
+                popup_38a3bf49d79b1f89de105ebbd729ba6b.setContent(html_51060cb130a781be95db5a44b632dd58);
+            
+        
+
+        marker_7f4373f9ed9812009c79090379b28878.bindPopup(popup_38a3bf49d79b1f89de105ebbd729ba6b)
+        ;
+
+        
+    
+    
+            marker_7f4373f9ed9812009c79090379b28878.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f76fdb19180c87545de95498915082c9 = L.marker(
+                [43.9133, -70.1804],
+                {}
+            ).addTo(map_f711baec2b1a6241a8c2ddc94a296314);
+        
+    
+            var icon_d9a533271fcbe1c310d21701ab42cea8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f76fdb19180c87545de95498915082c9.setIcon(icon_d9a533271fcbe1c310d21701ab42cea8);
+        
+    
+        var popup_bb3be8af5efe4d06a9b6b3ae22894c77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8e3d6dbf93b1500b335a03b92def4dc = $(`<div id="html_f8e3d6dbf93b1500b335a03b92def4dc" style="width: 100.0%; height: 100.0%;"><strong>Average&nbspDaily&nbspPrecipitation: 2018:&nbsp0.137 in.<br>2019:&nbsp0.158 in.<br>2020:&nbsp0.14 in.<br>2021:&nbsp0.115 in.<br>2010:&nbsp0 in.<br>2011:&nbsp0.146 in.<br>2012:&nbsp0.153 in.<br>2013:&nbsp0.122 in.<br>2014:&nbsp0.138 in.<br>2015:&nbsp0.134 in.<br></strong></div>`)[0];
+                popup_bb3be8af5efe4d06a9b6b3ae22894c77.setContent(html_f8e3d6dbf93b1500b335a03b92def4dc);
+            
+        
+
+        marker_f76fdb19180c87545de95498915082c9.bindPopup(popup_bb3be8af5efe4d06a9b6b3ae22894c77)
+        ;
+
+        
+    
+    
+            marker_f76fdb19180c87545de95498915082c9.bindTooltip(
+                `<div>
+                     Click for annual average rainfall data
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
