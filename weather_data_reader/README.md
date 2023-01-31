@@ -12,4 +12,4 @@ The `display_map.py` reads in text file generated and uses the information to ge
 - `make data` to produce a text file based on NOAA data
 - `make clean` to delete all html files generated
 
-visit this [map demo link] (https://briggstwitchell.github.io/resume/weather_data_reader/example_cities.html) to see a demo of this project
+visit this [map demo link](https://briggstwitchell.github.io/resume/weather_data_reader/example_cities.html) to see a demo of this project
