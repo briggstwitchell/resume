@@ -19,4 +19,5 @@ git pull origin master
 
 ```
 
-2) type `make` to compile all the Java files and begin the program -- the program will prompt you with instructions on how to continue.
+2) type `make` to compile all the Java files.
+3) type `java Main` to start execution -- the program will prompt you with instructions on how to continue.
