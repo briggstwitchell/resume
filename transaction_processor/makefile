@@ -2,7 +2,7 @@
 # Makefile for Workbook Program
 ###############################
 
-JFLAGS = -g -Xlint
+JFLAGS = -nowarn -Xlint
 JC = javac
 .SUFFIXES: .java .class
 .java.class:
