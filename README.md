@@ -1,7 +1,5 @@
 # Resume projects
-These projects demonstrate some of the programming skills I've obtained as a masters student at Northeastern.
-
-To learn more about me check out my [personal website](https://briggstwitchell.github.io/site/) and [LinkedIn profile](https://www.linkedin.com/in/briggstwitchell/).
+These projects demonstrate some of the programming skills I've obtained as a masters student at Northeastern. To learn more about me check out my [personal website](https://briggstwitchell.github.io/site/) and [LinkedIn profile](https://www.linkedin.com/in/briggstwitchell/).
 
 ### Transaction Processor
 * This program utilizes OOD, MVC design, and SOLID principles in Java to implement a generic linked link containing Chase transaction data. It can filter, sort, and summarize transaction data based on user commands.
