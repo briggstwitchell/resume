@@ -6,7 +6,7 @@ This version of the program is configured to read in .csv files downloadable fro
 # Demoing the program:
 1) Clone the repo with the following command:
 ```
-mkdir <repo>
+mkdir transaction_processor_repo
 cd transaction_processor_repo
 git init
 git remote add -f origin git@github.com:briggstwitchell/resume.git
