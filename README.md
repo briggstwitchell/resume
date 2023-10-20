@@ -1,5 +1,5 @@
 # Resume projects
-These projects demonstrate some of the programming skills I've obtained as a masters student at Northeastern. To learn more about me check out my [personal website](http://briggy-artist.org/) and [LinkedIn profile](https://www.linkedin.com/in/briggstwitchell/).
+These projects demonstrate some of the programming skills I've obtained as a masters student at Northeastern. To learn more about me check out my [personal website](http://briggy-artist.org/) (that I created) and [LinkedIn profile](https://www.linkedin.com/in/briggstwitchell/).
 
 ### Patient Walking Metadata at MedRhythms:
 > As a software engineer intern at [MedRhythms](https://medrhythms.com/), I worked on various projects related to patient clinical data, such as surfacing patient time zone and standard deviation of step precision for analysis by company researchers. The application was implemented in Python/Django. I of course cannot demonstrate any part of this work as it was proprietary.
