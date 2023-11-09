@@ -8,7 +8,7 @@ These projects demonstrate some of the programming skills I've obtained as a mas
 > As a software engineer intern at [MedRhythms](https://medrhythms.com/), I worked on various projects related to patient clinical data, such as surfacing patient time zone and standard deviation of step precision for analysis by company researchers. The application was implemented in Python/Django. I of course cannot demonstrate any part of this work as it was proprietary.
 
 ### Mapping Maine Healthcare Data:
-> Collaborated with Maine based cancer center to develop interactive map containing various metrics related to their cancer research goals; implemented in Python with GeoPandas and Folium libraries. I signed an NDA to work on this project and therefore cannot show any of this work.
+> Collaborated with Maine based cancer center to develop interactive map containing various metrics related to their cancer research goals; implemented in Python with GeoPandas and Folium libraries. I signed an NDA to work on this project and therefore cannot show any of the code. However, [click here](https://www.dropbox.com/s/ur6k6vg3qhwxijd/dual_maps.html?dl=0) for a demo of the product with all sensitive data removed.
 
 ### Trail recommender:
 > [This program](https://github.com/fabigazi/TrailRecommender) implements a trail sorting algorithm in Python that accounts for a variety of user preference inputs; utilizes the Gower Distance function and leverages Pandas and GeoPy. For this project, I led a team of four fellow graduate students for our algorithms class.
